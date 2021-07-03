@@ -254,3 +254,130 @@ java.lang.InterruptedException
 
 !ENTRY org.eclipse.ui 2 2 2021-07-02 19:07:45.509
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:55.951
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:55.952
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:55.953
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:55.954
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:55.985
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:56.351
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:56.355
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:56.357
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:56.357
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:56.392
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.280
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.284
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.286
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.287
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.307
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.383
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.386
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.387
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.388
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.402
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.466
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.469
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.471
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.471
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:57.486
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.078
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.082
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.084
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.084
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.101
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.158
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.161
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.162
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.162
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.174
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.443
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.446
+!MESSAGE classpath=108 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.447
+!MESSAGE buffering callback sts4.classpath.qnvmNSYE TekramProject-1 false 108
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.448
+!MESSAGE executing callback sts4.classpath.qnvmNSYE 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-03 09:44:58.461
+!MESSAGE executing callback sts4.classpath.qnvmNSYE SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 2 2 2021-07-03 09:44:58.540
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-07-03 09:44:58.541
+!MESSAGE The project description file (.project) for 'TekramProject' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2021-07-03 09:44:58.541
+!MESSAGE The project description file (.project) for 'test' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
