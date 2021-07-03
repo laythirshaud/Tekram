@@ -11,7 +11,7 @@
 <body>
 	<h1>
 		Welcome Page
-		<c:out value="${currentUser.username}"></c:out>
+		<c:out value="${currentUser.firstname}"></c:out>
 	</h1>
 
 	<form id="logoutForm" method="POST" action="/logout">

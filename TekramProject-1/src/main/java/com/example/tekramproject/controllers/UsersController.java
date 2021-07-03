@@ -2,7 +2,6 @@ package com.example.tekramproject.controllers;
 
 import java.security.Principal;
 
-import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.springframework.stereotype.Controller;
@@ -33,39 +32,33 @@ public class UsersController {
 		return "registration.jsp";
 	}
 
-	   @PostMapping("/registration")
+	  @PostMapping("/registration")
 	    public String registration(@Valid @ModelAttribute("user") User user, BindingResult result, Model model) {
 	        userValidator.validate(user, result);
 	        if (result.hasErrors()) {
-	            return "registration.jsp";
+	            return "registrationPage.jsp";
 	        }
 	        
 	        userService.saveWithUserRole(user);
 	        return "redirect:/home";
 	    }
 	   
-	   @RequestMapping("/logins")
-	   public String logins() {
-		   return "login.jsp";
-	   }
+	  @RequestMapping("/login")
+	    public String loginpage(@ModelAttribute("user") User user) {
+	        return "login.jsp";
+	    }
 
-	@RequestMapping("/login")
-	public String login(@ModelAttribute("user") User user,@RequestParam(value = "error", required = false) String error,
-			@RequestParam(value = "logout", required = false) String logout, Model model, HttpSession session) {
-		if (error != null) {
-			model.addAttribute("errorMessage", "Invalid Credentials, Please try again.");
-			
-			return "login.jsp";
-		}
-		if (logout != null) {
-			model.addAttribute("logoutMessage", "Logout Successful!");
-			return "login.jsp";
-		}
-		User newuser = userService.findByUsername(user.getUsername());
-		session.setAttribute("userId", newuser.getId());
-		return "home.jsp";
-		
-	}
+	    @PostMapping("/login")
+	    public String login(@ModelAttribute("user") User user,@RequestParam(value="error", required=false) String error, @RequestParam(value="logout", required=false) String logout, Model model) {
+	        if(error != null) {
+	            model.addAttribute("errorMessage", "Invalid Credentials, Please try again.");
+	        }
+	        if(logout != null) {
+	            model.addAttribute("logoutMessage", "Logout Successful!");
+	        }
+	        return "redirect:/home";
+	    }
+	   
 
 	@RequestMapping(value = "/home")
 	public String home(Principal principal, Model model) {
