@@ -13,6 +13,54 @@
 	crossorigin="anonymous">
 </head>
 <body>
+<<<<<<< HEAD
+<div >
+    <h1>Register</h1>
+    
+    <p><form:errors path="user.*"/></p>
+    
+    <form:form method="POST" action="/registration" modelAttribute="user">
+        <p>
+            <form:label path="firstname">First Name: </form:label>
+            <form:input path="firstname"/>
+        </p>
+           <p>
+            <form:label path="middlename">Middle Name: </form:label>
+            <form:input path="middlename"/>
+        </p>
+         <p>
+            <form:label path="lastname">Last Name: </form:label>
+            <form:input path="lastname"/>
+        </p>
+        <p>
+            <form:label path="address">Address: </form:label>
+            <form:input path="address"/>
+        </p>
+           <p>
+            <form:label path="phonenumber">Phone Number: </form:label>
+            <form:input path="phonenumber"/>
+        </p>
+         <p>
+            <form:label path="username">National Number: </form:label>
+            <form:input path="username"/>
+        </p>
+         <p>
+            <form:label path="email">Email: </form:label>
+            <form:input path="email"/>
+        </p>
+        <p>
+            <form:label path="password">Password:</form:label>
+            <form:password path="password"/>
+        </p>
+        <p>
+            <form:label path="passwordConfirmation">Password Confirmation:</form:label>
+            <form:password path="passwordConfirmation"/>
+        </p>
+        <input type="submit" value="Register"/>
+    </form:form>
+    </div>
+    
+=======
 	<section>
 	<div class="container">
 		<div class="row justify-content-center">
@@ -75,5 +123,6 @@
 		</div>
 	</div>
 	</section>
+>>>>>>> a8e890cd2f949f082213779f69146de671138569
 </body>
 </html>
