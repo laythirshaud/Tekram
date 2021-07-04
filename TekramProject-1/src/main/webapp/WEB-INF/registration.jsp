@@ -24,8 +24,16 @@
             <form:input path="middlename"/>
         </p>
          <p>
-            <form:label path="lastname">last Name: </form:label>
+            <form:label path="lastname">Last Name: </form:label>
             <form:input path="lastname"/>
+        </p>
+        <p>
+            <form:label path="address">Address: </form:label>
+            <form:input path="address"/>
+        </p>
+           <p>
+            <form:label path="phonenumber">Phone Number: </form:label>
+            <form:input path="phonenumber"/>
         </p>
          <p>
             <form:label path="username">National Number: </form:label>
