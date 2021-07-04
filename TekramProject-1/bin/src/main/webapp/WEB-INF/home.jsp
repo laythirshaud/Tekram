@@ -4,7 +4,6 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <<<<<<< HEAD
-=======
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -45,7 +44,8 @@
     -->
   </body>
 </html>
->>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f
+	
+=======
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -100,7 +100,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <img class="navbar-brand" src="img/logo.png" alt="Girl in a jacket" width="60" height="60">
+      <a class="navbar-brand" href="#">Logo</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -144,6 +144,8 @@
       </div>
     </div>
   </div>
+</div>
+
 <footer class="container-fluid text-center">
   <p>Footer Text</p>
 </footer>
@@ -152,3 +154,4 @@
 </html>
 
 
+>>>>>>> 5f816b159d438b6e66d302416be7fd9245600a3b
