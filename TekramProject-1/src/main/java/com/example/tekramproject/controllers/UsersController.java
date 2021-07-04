@@ -32,11 +32,24 @@ public class UsersController {
 		return "registration.jsp";
 	}
 
+	@RequestMapping("/home")
+	public String home(Principal principal, Model model) {
+		
+		String username = principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(username));
+		return "home.jsp";
+	}
+	@RequestMapping("/admin")
+	public String adminPage(Principal principal, Model model) {
+		String username = principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(username));
+		return "admin.jsp";
+	}
 	  @PostMapping("/registration")
 	    public String registration(@Valid @ModelAttribute("user") User user, BindingResult result, Model model) {
 	        userValidator.validate(user, result);
 	        if (result.hasErrors()) {
-	            return "registrationPage.jsp";
+	            return "registration.jsp";
 	        }
 	        
 	        userService.saveWithUserRole(user);
@@ -60,18 +73,5 @@ public class UsersController {
 	    }
 	   
 
-	@RequestMapping(value = "/home")
-	public String home(Principal principal, Model model) {
-
-		String username = principal.getName();
-		model.addAttribute("currentUser", userService.findByUsername(username));
-		return "home.jsp";
-	}
-	   @RequestMapping("/admin")
-	    public String adminPage(Principal principal, Model model) {
-	        String username = principal.getName();
-	        model.addAttribute("currentUser", userService.findByUsername(username));
-	        return "admin.jsp";
-	    }
 
 }
