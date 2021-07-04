@@ -7,32 +7,48 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Login</title>
+<link rel="stylesheet" type="text/css" href="login/style.css">
+
+
 </head>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <body>
 <div>
     <div>
             <c:if test="${logoutMessage != null}">
         <c:out value="${logoutMessage}"></c:out>
     </c:if>
-    <h1>Login</h1>
+   
     <c:if test="${errorMessage != null}">
         <c:out value="${errorMessage}"></c:out>
     </c:if>
+
+    
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+<!--             <img src="" id="icon" alt="User Icon" />
+ -->          </div>
+      
+          <!-- Login Form -->
     <form method="POST" action="/login">
-        <p>
-            <label for="username">National Number</label>
-            <input type="text" id="username" name="username"/>
-        </p>
-        <p>
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"/>
-        </p>
-        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
-        <input type="submit" value="Login"/>
-    </form>
-    </div>
-    
-    
+            <input type="text" id="login" class="fadeIn second inpute" name="username" placeholder="National ID">
+            <input type="password" id="password" class="fadeIn third inpute" name="password" placeholder="password">
+            <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+            <input type="submit" class="fadeIn fourth" value="Log In">
+          </form>
+      
+          <!-- Remind Passowrd -->
+          <div id="formFooter">
+            <a class="underlineHover" href="#">Forgot Password?</a>
+          </div>
+      
+        </div>
+      </div>
     
 </body>
 </html>

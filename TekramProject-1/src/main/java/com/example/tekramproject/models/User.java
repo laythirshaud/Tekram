@@ -33,7 +33,6 @@ public class User {
 	@Size(min = 9, max = 9)
 	private String username;
 	@Email
-	@NotEmpty(message = "Email is required!")
 	private String email;
 	@Size(min = 5)
 	private String password;
@@ -44,7 +43,7 @@ public class User {
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
-	@ManyToMany(fetch = FetchType.LAZY)
+	@ManyToMany(fetch = FetchType.EAGER )
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roles;
 	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
