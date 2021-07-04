@@ -36,7 +36,7 @@ public class UsersController {
 	    public String registration(@Valid @ModelAttribute("user") User user, BindingResult result, Model model) {
 	        userValidator.validate(user, result);
 	        if (result.hasErrors()) {
-	            return "registrationPage.jsp";
+	            return "registration.jsp";
 	        }
 	        
 	        userService.saveWithUserRole(user);

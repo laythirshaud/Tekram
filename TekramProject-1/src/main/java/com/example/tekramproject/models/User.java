@@ -12,11 +12,13 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.persistence.Transient;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -28,20 +30,25 @@ public class User {
 	private String firstname;
 	private String middlename;
 	private String lastname;
-	@Size(min = 9, max=9)
+	@Size(min = 9, max = 9)
 	private String username;
 	@Email
+	@NotEmpty(message = "Email is required!")
 	private String email;
 	@Size(min = 5)
 	private String password;
 	@Transient
 	private String passwordConfirmation;
+	private String address;
+	private String phonenumber;
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
-	@ManyToMany(fetch = FetchType.EAGER)
+	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roles;
+	@OneToMany(mappedBy = "user", fetch = FetchType.LAZY)
+	private List<Request> requests;
 
 	public User() {
 	}
@@ -94,6 +101,22 @@ public class User {
 		this.email = email;
 	}
 
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getPhonenumber() {
+		return phonenumber;
+	}
+
+	public void setPhonenumber(String phonenumber) {
+		this.phonenumber = phonenumber;
+	}
+
 	public String getPassword() {
 		return password;
 	}
@@ -132,6 +155,15 @@ public class User {
 
 	public void setRoles(List<Role> roles) {
 		this.roles = roles;
+	}
+	
+
+	public List<Request> getRequests() {
+		return requests;
+	}
+
+	public void setRequests(List<Request> requests) {
+		this.requests = requests;
 	}
 
 	@PrePersist
