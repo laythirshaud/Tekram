@@ -33,7 +33,10 @@ public class User {
 	@Size(min = 9, max = 9)
 	private String username;
 	@Email
+<<<<<<< HEAD
 //	@NotEmpty(message = "Email is required!")
+=======
+>>>>>>> a8e890cd2f949f082213779f69146de671138569
 	private String email;
 	@Size(min = 5)
 	private String password;
@@ -44,6 +47,10 @@ public class User {
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
+<<<<<<< HEAD
+=======
+
+>>>>>>> a8e890cd2f949f082213779f69146de671138569
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roles;
