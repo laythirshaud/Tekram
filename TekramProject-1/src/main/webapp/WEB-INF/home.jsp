@@ -23,30 +23,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-<<<<<<< HEAD
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <img class="navbar-brand" src="img/logo.png" alt="Girl in a jacket" width="60" height="60">
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/home">Home</a></li>
-              <li class="nav-item dropdown">
-=======
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/home">Home<span class="sr-only">(current)</span></a>
       </li>
      
       <li class="nav-item dropdown">
->>>>>>> 2891588d154d644fdd3cdc4b6c97c496158ea69e
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
          Our Services
         </a>
@@ -76,11 +59,7 @@
   <div class="card-body">
     <p class="card-header"> Water Services</p>
   </div>
-<<<<<<< HEAD
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
-=======
+
 </div>
 	<div class="card" style="width: 18rem;">
   <img class="card-img-top" src="img/tax.jpg" alt="Pay Taxes">
@@ -130,7 +109,6 @@
 	</div>
 	<h6>Copyright 2021 AXSOS AG</h6>
 
->>>>>>> 2891588d154d644fdd3cdc4b6c97c496158ea69e
 
 	</footer>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
