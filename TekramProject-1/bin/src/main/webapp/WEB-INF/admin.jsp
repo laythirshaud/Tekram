@@ -1,4 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
+<<<<<<< HEAD
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+    
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+=======
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
@@ -26,17 +32,27 @@
 			value="${_csrf.token}" /> 
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-right:15px">Logout</button>
 =======
+>>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Admin Page</title>
 </head>
 <body>
+<<<<<<< HEAD
+    <h1>Welcome to the Admin Page <c:out value="${currentUser.username}"></c:out></h1>
+=======
     <h1>Welcome to the Admin Page <c:out value="${currentUser.firstname}"></c:out></h1>
+>>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f
     
     <form id="logoutForm" method="POST" action="/logout">
         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
         <input type="submit" value="Logout!" />
+<<<<<<< HEAD
+    </form>
+</body>
+</html>
+=======
 >>>>>>> 5f816b159d438b6e66d302416be7fd9245600a3b
     </form>
       </nav>
@@ -66,3 +82,4 @@
   </body>
 </html>
 	
+>>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f

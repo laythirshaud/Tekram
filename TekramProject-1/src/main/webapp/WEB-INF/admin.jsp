@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -65,11 +65,11 @@
     
     
 <center style="margin:50px">
-	<div class="jumbotron">
-	<h1 class="display-4">
-		Welcome to admin Page
-		<c:out value="${currentUser.firstname}"></c:out>
-	</h1>
+    <div class="jumbotron">
+    <h1 class="display-4">
+        Welcome to admin Page
+        <c:out value="${currentUser.firstname}"></c:out>
+    </h1>
   <p class="lead">Here you can control on all the requestes</p>
   <hr class="my-4">
   <p>Please click on the button to go to the requests page</p>
@@ -88,4 +88,3 @@
     -->
   </body>
 </html>
-	

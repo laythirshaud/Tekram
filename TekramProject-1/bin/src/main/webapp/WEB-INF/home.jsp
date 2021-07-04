@@ -4,6 +4,15 @@
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <<<<<<< HEAD
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Welcome Page</title>
+</head>
+<body>
+	<h1>
+=======
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -23,6 +32,7 @@
         </a>
       </nav>
     <h1>
+>>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f
 		Welcome Page
 		<c:out value="${currentUser.firstname}"></c:out>
 	</h1>
@@ -31,6 +41,10 @@
 		<input type="hidden" name="${_csrf.parameterName}"
 			value="${_csrf.token}" /> <input type="submit" value="Logout!" />
 	</form>
+<<<<<<< HEAD
+</body>
+</html>
+=======
 
     <!-- Optional JavaScript; choose one of the two! -->
 
@@ -155,3 +169,4 @@
 
 
 >>>>>>> 5f816b159d438b6e66d302416be7fd9245600a3b
+>>>>>>> 6b6ce6041d72c743e03166de4a735a7002ceb75f
