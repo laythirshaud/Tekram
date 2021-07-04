@@ -3,10 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<<<<<<< HEAD
-=======
 
->>>>>>> a8e890cd2f949f082213779f69146de671138569
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
