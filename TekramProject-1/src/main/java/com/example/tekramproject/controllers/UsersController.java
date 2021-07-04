@@ -32,13 +32,6 @@ public class UsersController {
 		return "registration.jsp";
 	}
 
-	@RequestMapping("/home")
-	public String home(Principal principal, Model model) {
-		
-		String username = principal.getName();
-		model.addAttribute("currentUser", userService.findByUsername(username));
-		return "home.jsp";
-	}
 	@RequestMapping("/admin")
 	public String adminPage(Principal principal, Model model) {
 		String username = principal.getName();
@@ -72,6 +65,21 @@ public class UsersController {
 	        return "redirect:/home";
 	    }
 	   
-
+	    @RequestMapping("/home")
+	    public String home(Principal principal, Model model) {
+	    	
+	    	String username = principal.getName();
+	    	model.addAttribute("currentUser", userService.findByUsername(username));
+	    	return "home.jsp";
+	    }
+	    
+	    @RequestMapping("/admin/requests")
+	    public String admin2() {
+	        return "admin2.jsp";
+	    }
+	    @RequestMapping("/request")
+	    public String request() {
+	        return "requestinfo.jsp";
+	    }
 
 }
