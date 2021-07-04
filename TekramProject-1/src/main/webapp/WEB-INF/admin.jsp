@@ -3,6 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<<<<<<< HEAD
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -24,6 +25,19 @@
          <input type="hidden" name="${_csrf.parameterName}"
 			value="${_csrf.token}" /> 
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin-right:15px">Logout</button>
+=======
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Admin Page</title>
+</head>
+<body>
+    <h1>Welcome to the Admin Page <c:out value="${currentUser.firstname}"></c:out></h1>
+    
+    <form id="logoutForm" method="POST" action="/logout">
+        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+        <input type="submit" value="Logout!" />
+>>>>>>> 5f816b159d438b6e66d302416be7fd9245600a3b
     </form>
       </nav>
     
