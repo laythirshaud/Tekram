@@ -57,7 +57,7 @@
         <div class="col">
             <div class="form-group">
                 <form:label path="buildinglicense">Bilding license</form:label>
-                
+
                 <form:input path="buildinglicense" type="text" class="form-control is-invalid" placeholder="Enter the Bilding license" />
             </div>
         </div>

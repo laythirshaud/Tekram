@@ -35,6 +35,7 @@ public class RequestsController {
 	public String waterPage(@ModelAttribute("water") Water water,Model model,Principal principal) {
 		String user=principal.getName();
 		model.addAttribute("currentUser", userService.findByUsername(user));
+
 		return "water.jsp";
 	}
 
@@ -49,6 +50,7 @@ public class RequestsController {
 	}
 
 	@RequestMapping("/suggestion")
+
 	public String suggestionPage(@ModelAttribute("suggestion") Suggestion suggestion) {
 		return "suggestion.jsp";
 	}
@@ -73,5 +75,22 @@ public class RequestsController {
 
 
 }
-		
+	@RequestMapping(value="/suggestion/new", method=RequestMethod.POST)
+    public String addSuggestion(@Valid @ModelAttribute("suggestion") Suggestion mySuggestion,BindingResult result,Principal principal,Model model) {
+        if (result.hasErrors()) {
+        	
+            return "suggestion.jsp";
+        }else{
+        	String username = principal.getName();
+        	User currentUser=  userService.findByUsername(username);
+        	Request request=new Request(currentUser);
+        	Request re=requestService.create(request);
+        	Suggestion su=requestService.createSug(mySuggestion);
+        	requestService.updateSuggestion(su, re);
+        return "redirect:/suggestion";
+
+        }
+
+
+}
 }
