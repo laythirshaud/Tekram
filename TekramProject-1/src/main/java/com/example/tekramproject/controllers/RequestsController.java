@@ -49,9 +49,14 @@ public class RequestsController {
 		return "tax.jsp";
 	}
 
-	@RequestMapping("/suggestion")
 
-	public String suggestionPage(@ModelAttribute("suggestion") Suggestion suggestion) {
+
+	
+	@RequestMapping("/suggestion")
+	public String suggestionPage(@ModelAttribute("suggestion") Suggestion suggestion,Model model,Principal principal) {
+		String user=principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(user));
+
 		return "suggestion.jsp";
 	}
 	
@@ -78,7 +83,9 @@ public class RequestsController {
 	@RequestMapping(value="/suggestion/new", method=RequestMethod.POST)
     public String addSuggestion(@Valid @ModelAttribute("suggestion") Suggestion mySuggestion,BindingResult result,Principal principal,Model model) {
         if (result.hasErrors()) {
-        	
+        	String user=principal.getName();
+    		model.addAttribute("currentUser", userService.findByUsername(user));
+
             return "suggestion.jsp";
         }else{
         	String username = principal.getName();

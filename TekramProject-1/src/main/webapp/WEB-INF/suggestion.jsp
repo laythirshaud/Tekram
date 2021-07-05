@@ -16,7 +16,7 @@
 			<div class="col">
 				<div class="form-group">
 					<label >First Name</label> <label  type="text"
-						class="form-control is-valid"> ${currentUser.firstname}</label>
+						class="form-control is-valid">${currentUser.firstname}</label>
 
 				</div>
 			</div>
@@ -36,14 +36,14 @@
 			<div class="col">
 				<div class="form-group">
 					<label>Middle Name</label> <label type="text"
-						class="form-control is-valid"> Moayyad</label>
+						class="form-control is-valid"> ${currentUser.middlename}</label>
 
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label>Address</label> <label type="text"
-						class="form-control is-valid"> Ramallah</label>
+						class="form-control is-valid"> ${currentUser.address}</label>
 
 				</div>
 			</div>
@@ -56,7 +56,7 @@
 			<div class="col">
 				<div class="form-group">
 					<label path="">Last Name</label> <label type="text"
-						class="form-control is-valid"> Albzoor</label>
+						class="form-control is-valid"> ${currentUser.lastname}</label>
 
 				</div>
 			</div>
