@@ -1371,3 +1371,4 @@
 2021-07-05 10:43:24,226 [Worker-20: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
 2021-07-05 10:43:24,235 [Worker-20: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-07-05 10:43:24,236 [Worker-20: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-05 10:43:24,236 [Worker-20: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\Tekram Last Update\Tekram\TekramProject-1\src\test\resources
