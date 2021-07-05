@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.springframework.stereotype.Service;
 
+import com.example.tekramproject.models.Quittance;
 import com.example.tekramproject.models.Request;
 import com.example.tekramproject.models.Suggestion;
 import com.example.tekramproject.models.Water;
@@ -87,4 +88,16 @@ public class RequestService {
 		return waterRepository.save(wa);
 
 }
+
+
+	public Quittance createQui(Quittance myQuittance) {
+		return quittanceRepository.save(myQuittance);
+	}
+
+
+	public Quittance updateQuittance(Quittance qu, Request re) {
+		qu.setRequest(re);
+		return quittanceRepository.save(qu);
+		
+	}
 }

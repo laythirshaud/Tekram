@@ -11,7 +11,7 @@
 </head>
 <body>
   <div style="width: 500px; margin: auto;">
-  <form:form method="POST" action="/neww" modelAttribute="quittance">
+  <form:form method="POST" action="quittance/new" modelAttribute="quittance">
     <div class="row">
         <div class="col">
              <div class="form-group">
@@ -52,7 +52,7 @@
             </div>
        </div>
     </div>
-    <button type="button" class="btn btn-primary btn-lg">Send</button>
+    <input type="submit" class="btn btn-primary btn-lg" value="Send"/>
   </form:form>
 </div>
 </body>

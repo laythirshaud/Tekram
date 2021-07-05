@@ -100,4 +100,24 @@ public class RequestsController {
 
 
 }
+	@RequestMapping(value="quittance/new", method=RequestMethod.POST)
+    public String addquittance(@Valid @ModelAttribute("quittance") Quittance myQuittance,BindingResult result,Principal principal,Model model) {
+        if (result.hasErrors()) {
+        	String user=principal.getName();
+    		model.addAttribute("currentUser", userService.findByUsername(user));
+
+            return "quittance.jsp";
+        }else{
+        	String username = principal.getName();
+        	User currentUser=  userService.findByUsername(username);
+        	Request request=new Request(currentUser);
+        	Request re=requestService.create(request);
+        	Quittance qu=requestService.createQui(myQuittance);
+        	requestService.updateQuittance(qu, re);
+        return "redirect:/quittance";
+
+        }
+
+
+}
 }
