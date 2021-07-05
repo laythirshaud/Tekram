@@ -5465,3 +5465,68 @@ Binding(CTRL+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:06.832
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:06.842
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:06.850
+!MESSAGE buffering callback sts4.classpath.cJgdAVtS TekramProject-1 false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:06.851
+!MESSAGE executing callback sts4.classpath.cJgdAVtS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.692
+!MESSAGE executing callback sts4.classpath.cJgdAVtS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.700
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.712
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.720
+!MESSAGE buffering callback sts4.classpath.cJgdAVtS TekramProject-1 false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.720
+!MESSAGE executing callback sts4.classpath.cJgdAVtS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 10:34:08.847
+!MESSAGE executing callback sts4.classpath.cJgdAVtS SUCCESS [done]
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:14.560
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:14.885
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:16.863
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:16.938
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:17.044
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:17.422
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 10:34:17.527
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException

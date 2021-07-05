@@ -9,7 +9,6 @@ INDEX VERSION 1.131+C:\Users\BisanCo\Desktop\Tekram Last Update\Tekram\.metadata
 3320559463.index
 1774492893.index
 3990357657.index
-162034016.index
 2614132466.index
 3522158476.index
 3689078019.index
