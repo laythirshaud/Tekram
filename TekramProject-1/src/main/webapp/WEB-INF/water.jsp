@@ -11,6 +11,7 @@
 </head>
 <body>
   <div style="width: 500px; margin: auto;">
+  
   <form:form method="POST" action="/water/new" modelAttribute="water">
     <div class="row">
         <div class="col">

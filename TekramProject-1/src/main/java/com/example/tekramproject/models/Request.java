@@ -42,9 +42,6 @@ public class Request {
 	public Request() {
 
 	}
-	// create constructor to have(user_id,  sttaus)
-	
-
 	public Long getId() {
 		return id;
 	}
