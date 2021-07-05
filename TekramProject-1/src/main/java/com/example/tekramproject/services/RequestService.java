@@ -51,7 +51,7 @@ public class RequestService {
 		}
 	}
 
-	//find all request
+	//find all requests
 	public List<Request> all() {
 		return (List<Request>) requestRepository.findAll();
 	}

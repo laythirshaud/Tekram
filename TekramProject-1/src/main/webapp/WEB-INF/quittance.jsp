@@ -15,27 +15,27 @@
     <div class="row">
         <div class="col">
              <div class="form-group">
-                 <form:label path="">First Name</form:label>
-                 <form:label path="" type="text"  class="form-control is-valid"> layth</form:label>
+                 <form:label path="firstname">First Name</form:label>
+                 <form:label path="firstname" type="text"  class="form-control is-valid"> layth</form:label>
              </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <form:label path="">National ID</form:label>
-                <form:label path="" type="text"  class="form-control is-valid"> 987654321</form:label>
+                <form:label path="username">National ID</form:label>
+                <form:label path="username" type="text"  class="form-control is-valid"> 987654321</form:label>
             </div>
        </div>
     </div>
     <div class="row">
         <div class="col">
              <div class="form-group">
-                 <form:label path="">Middle Name</form:label>
-                 <form:label path="" type="text"  class="form-control is-valid"> fouad</form:label>
+                 <form:label path="middlename">Middle Name</form:label>
+                 <form:label path="middlename" type="text"  class="form-control is-valid"> fouad</form:label>
              </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <form:label path="signature">The Signature</form:label>
+                <form:label path="signature">Signature</form:label>
                 <form:input path="signature" type="text"  class="form-control is-invalid"/> 
             </div>
        </div>
@@ -43,8 +43,8 @@
     <div class="row">
         <div class="col">
              <div class="form-group">
-                 <form:label path="">Last Name</form:label>
-                 <form:label path="" type="text"  class="form-control is-valid"> irshaid</form:label>
+                 <form:label path="lastname">Last Name</form:label>
+                 <form:label path="lastname" type="text"  class="form-control is-valid"> irshaid</form:label>
              </div>
         </div>
         <div class="col">

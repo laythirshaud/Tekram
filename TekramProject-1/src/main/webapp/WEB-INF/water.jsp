@@ -15,15 +15,20 @@
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <form:label path="">First Name</form:label>
-                <form:label path="" type="text"
+                <form:label path="firstname">First Name</form:label>
+                <form:label path="firstname" type="text"
                     class="form-control is-valid"> layth</form:label>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <form:label path="" >${National ID}</form:label> 
+<<<<<<< HEAD
+                <form:label path="" >National ID</form:label> 
                 <form:label path="" type="text"
+=======
+                <form:label path="username" >${National ID}</form:label> 
+                <form:label path="username" type="text"
+>>>>>>> 7cf4afcc55e15c686dc07e773032efd876d76423
                     class="form-control is-valid"> 987654321</form:label>
             </div>
         </div>
@@ -31,15 +36,15 @@
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <form:label path="" >Middle Name</form:label> 
-                <form:label path="" type="text"
+                <form:label path="middlename" >Middle Name</form:label> 
+                <form:label path="middlename" type="text"
                     class="form-control is-valid"> fouad</form:label>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
-                <form:label path="" for="">Address</form:label>
-                <form:label path="" type="text"
+                <form:label path="address" for="">Address</form:label>
+                <form:label path="address" type="text"
                     class="form-control is-valid"> Ramallah</form:label>
             </div>
         </div>
@@ -47,23 +52,23 @@
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <form:label path="">Last Name</form:label>
-                <form:label path="" type="text"
+                <form:label path="lastname">Last Name</form:label>
+                <form:label path="lastname" type="text"
                     class="form-control is-valid"> irshaid</form:label>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
                 <form:label path="buildinglicense">Bilding license</form:label>
-                <form:input path="buildinglicense" type="text"class="form-control is-invalid"placeholder="Enter the Bilding license" />
+                <form:input path="buildinglicense" type="text" class="form-control is-invalid" placeholder="Enter the Bilding license" />
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col">
             <div class="form-group">
-                <form:label path="">Phone Number</form:label> 
-                <form:label path="" type="text"
+                <form:label path="phonenumber">Phone Number</form:label> 
+                <form:label path="phonenumber" type="text"
                     class="form-control is-valid"> 0595958344</form:label>
             </div>
         </div>
