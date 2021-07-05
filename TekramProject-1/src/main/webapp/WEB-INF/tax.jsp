@@ -20,14 +20,14 @@
             <div class="col">
                  <div class="form-group">
                      <label for="">First Name</label>
-                     <label type="text"  class="form-control is-valid"> Ahmad</label>
+                     <label type="text"  class="form-control is-valid"> ${currentUser.firstname}</label>
                      
                  </div>
             </div>
             <div class="col">
                 <div class="form-group">
                     <label for="">National ID</label>
-                    <label type="text"  class="form-control is-valid"> 8531324582</label>
+                    <label type="text"  class="form-control is-valid"> ${currentUser.username}</label>
                     
                 </div>
            </div>
@@ -40,14 +40,14 @@
             <div class="col">
                  <div class="form-group">
                      <label for="">Middle Name</label>
-                     <label type="text"  class="form-control is-valid"> Moayyad</label>
+                     <label type="text"  class="form-control is-valid"> ${currentUser.middlename}</label>
                      
                  </div>
             </div>
             <div class="col">
                 <div class="form-group">
                     <label for="">Phone Number</label>
-                    <label type="text"  class="form-control is-valid"> 0568 000 000</label>
+                    <label type="text"  class="form-control is-valid"> ${currentUser.phonenumber}</label>
                     
                 </div>
            </div>
@@ -60,7 +60,7 @@
             <div class="col">
                  <div class="form-group">
                      <label for="">Last Name</label>
-                     <label type="text"  class="form-control is-valid"> Albzoor</label>
+                     <label type="text"  class="form-control is-valid"> ${currentUser.lastname}</label>
                      
                  </div>
             </div>
@@ -83,7 +83,7 @@
             <div class="col"style="width:237px; margin:-25px 0 0 0;"   >
                  <div class="form-group">
                      <label for="">Address</label>
-                     <label type="text" style="width:237px;"  class="form-control is-valid"> Ramallah</label>
+                     <label type="text" style="width:237px;"  class="form-control is-valid"> ${currentUser.address}</label>
                      
                  </div>
             </div>
