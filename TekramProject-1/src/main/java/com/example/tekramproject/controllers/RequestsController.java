@@ -40,14 +40,16 @@ public class RequestsController {
 	}
 
 	@RequestMapping("/quittance")
-	public String quittancePage(@ModelAttribute("quittance") Quittance quittance) {
+	public String quittancePage(@ModelAttribute("quittance") Quittance quittance,Model model,Principal principal) {
+		String user=principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(user));
 		return "quittance.jsp";
 	}
+	
+	
+	
 
-	@RequestMapping("/tax")
-	public String taxPage(@ModelAttribute("tax") Tax tax) {
-		return "tax.jsp";
-	}
+
 
 
 
