@@ -53,17 +53,6 @@ public class RequestsController {
 		return "suggestion.jsp";
 	}
 	
-//		@PostMapping("/water/new")
-//		public String createWater(@Valid @ModelAttribute("water") Water myWater, BindingResult result) {
-//			if (result.hasErrors()) {
-//				return "water.jsp";
-//			} else {
-//				requestService.createWater(myWater);
-//				return "redirect:/water";
-//			}
-//		}
-	
-	
 	
 	@RequestMapping(value="/water/new", method=RequestMethod.POST)
     public String addSuggestion(@Valid @ModelAttribute("water") Water myWater,BindingResult result,Principal principal,Model model) {
@@ -86,14 +75,3 @@ public class RequestsController {
 }
 		
 }
-//		@RequestMapping("/courses/add/{id}")
-//		public String addCourse(@PathVariable("id") Long myId, Model model, HttpSession session) {
-//			Long userId = (Long) session.getAttribute("user_Id");
-//		
-//			u.getCourses().add(course);
-//			userService.updateUser(u);
-//			
-//			
-//			return "redirect:/courses";
-//		}
-
