@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.example.tekramproject.models.Quittance;
 import com.example.tekramproject.models.Request;
 import com.example.tekramproject.models.Suggestion;
+import com.example.tekramproject.models.Tax;
 import com.example.tekramproject.models.Water;
 
 import com.example.tekramproject.repositories.QuittanceRepository;
@@ -100,4 +101,19 @@ public class RequestService {
 		return quittanceRepository.save(qu);
 		
 	}
+
+
+	public Tax createTax(@Valid Tax myTax) {
+		return taxRepository.save(myTax);
+	}
+
+
+	public Tax updateTax(Tax tax, Request re) {
+		tax.setRequest(re);
+		return taxRepository.save(tax);
+		
+	}
+
+
+
 }

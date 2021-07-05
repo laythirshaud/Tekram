@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+	
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +13,7 @@
 <title>Insert title here</title>
 </head>
 <body>
- <form action=""style="width: 500px; margin:auto;">
+ <form:form action="tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
         <div class="row">
         
         
@@ -64,8 +66,8 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <label for="">Cost</label>
-                    <input type="text"  class="form-control is-invalid"> 
+                    <form:label path="cost">Cost</form:label>
+                    <form:input  path="cost" type="text"  class="form-control is-invalid"/> 
                     <small class="invalid-feedback">
                         The cost will be in NIS
                     </small>
@@ -89,8 +91,8 @@
            
            
         </div>
-        <button type="button" class="btn btn-primary btn-lg">Send</button>
+        <input type="submit" value="Send" class="btn btn-primary btn-lg">
 
-     </form>
+     </form:form>
 </body>
 </html>

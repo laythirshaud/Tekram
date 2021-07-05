@@ -61,6 +61,14 @@ public class RequestsController {
 
 		return "suggestion.jsp";
 	}
+
+	@RequestMapping("/tax")
+	public String suggestionPage(@ModelAttribute("tax") Tax tax,Model model,Principal principal) {
+		String user=principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(user));
+
+		return "tax.jsp";
+	}
 	
 	
 	@RequestMapping(value="/water/new", method=RequestMethod.POST)
@@ -77,6 +85,25 @@ public class RequestsController {
         	Water wa=requestService.createWater(myWater);
         	requestService.updateWater(wa, re);
         return "redirect:/water";
+
+        }
+
+
+}
+	@RequestMapping(value="/tax/new", method=RequestMethod.POST)
+    public String addTax(@Valid @ModelAttribute("tax") Tax myTax,BindingResult result,Principal principal,Model model) {
+        if (result.hasErrors()) {
+        	String user=principal.getName();
+    		model.addAttribute("currentUser", userService.findByUsername(user));
+            return "tax.jsp";
+        }else{
+        	String username = principal.getName();
+        	User currentUser=  userService.findByUsername(username);
+        	Request request=new Request(currentUser);
+        	Request re=requestService.create(request);
+        	Tax tax=requestService.createTax(myTax);
+        	requestService.updateTax(tax, re);
+        return "redirect:/tax";
 
         }
 
