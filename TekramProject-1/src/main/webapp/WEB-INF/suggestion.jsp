@@ -16,14 +16,14 @@
 			<div class="col">
 				<div class="form-group">
 					<label >First Name</label> <label  type="text"
-						class="form-control is-valid"> ${currentUser.firstname}</label>
+						class="form-control is-valid">ahmad</label>
 
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
 					<label >National ID</label> <label  type="text"
-						class="form-control is-valid"> ${currentUser.username}</label>
+						class="form-control is-valid"> 11111111111111</label>
 
 				</div>
 			</div>
