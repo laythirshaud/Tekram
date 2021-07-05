@@ -29,6 +29,7 @@ public class Request {
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
 	private User user;
+	
 	@OneToMany(mappedBy = "request", fetch = FetchType.LAZY)
 	private List<Water> water_requests;
 	@OneToMany(mappedBy = "request", fetch = FetchType.LAZY)
@@ -41,11 +42,20 @@ public class Request {
 	public Request() {
 
 	}
+	// create constructor to have(user_id,  sttaus)
+	
 
 	public Long getId() {
 		return id;
 	}
 
+	public Request(User user) {
+		Status = "pending";
+		this.user = user;
+	}
+	
+	
+	
 	public String getStatus() {
 		return Status;
 	}
@@ -123,6 +133,7 @@ public class Request {
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
+	
 
 
 

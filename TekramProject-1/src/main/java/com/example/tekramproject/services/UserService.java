@@ -37,6 +37,7 @@ public class UserService {
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
     }
+<<<<<<< HEAD
 	public User findById(Long id) {
 		Optional<User> optionaluser = userRepository.findById(id);
 		if (optionaluser.isPresent()) {
@@ -45,4 +46,15 @@ public class UserService {
 			return null;
 		}
 	}
+=======
+    
+    public User findById(Long id) {
+        Optional<User> optionaluser = userRepository.findById(id);
+        if (optionaluser.isPresent()) {
+            return optionaluser.get();
+        } else {
+            return null;
+        }
+    }
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
 }

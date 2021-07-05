@@ -11,17 +11,21 @@
 </head>
 <body>
   <div style="width: 500px; margin: auto;">
-  <form:form method="POST" action="/new" modelAttribute="water">
+  <form:form method="POST" action="/water/new" modelAttribute="water">
     <div class="row">
         <div class="col">
             <div class="form-group">
                 <form:label path="">First Name</form:label>
                 <form:label path="" type="text"
-                    class="form-control is-valid"> layth</form:label>
+                    class="form-control is-valid"></form:label>
             </div>
         </div>
         <div class="col">
             <div class="form-group">
+<<<<<<< HEAD
+=======
+
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
                 <form:label path="" >National ID</form:label> 
                 <form:label path="" type="text"
                     class="form-control is-valid"> 987654321</form:label>
@@ -55,6 +59,10 @@
         <div class="col">
             <div class="form-group">
                 <form:label path="buildinglicense">Bilding license</form:label>
+<<<<<<< HEAD
+=======
+                
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
                 <form:input path="buildinglicense" type="text" class="form-control is-invalid" placeholder="Enter the Bilding license" />
             </div>
         </div>
@@ -71,7 +79,8 @@
             <div class="form-group"></div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary btn-lg">Send</button>
+    <input class="btn btn-primary btn-lg" type="submit"
+								value="Send" />
   </form:form>
 </div>
 </body>

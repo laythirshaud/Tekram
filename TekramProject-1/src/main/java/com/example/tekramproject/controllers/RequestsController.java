@@ -25,7 +25,10 @@ public class RequestsController {
 
 	private UserService userService;
 	private RequestService requestService;
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
 
 	public RequestsController(UserService userService, RequestService requestService) {
 		this.userService = userService;
@@ -33,7 +36,13 @@ public class RequestsController {
 	}
 
 	@RequestMapping("/water")
+<<<<<<< HEAD
 	public String waterPage(@ModelAttribute("water") Water water) {
+=======
+	public String waterPage(@ModelAttribute("water") Water water,Model model,Principal principal) {
+		String user=principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(user));
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
 		return "water.jsp";
 	}
 
@@ -48,6 +57,7 @@ public class RequestsController {
 	}
 
 	@RequestMapping("/suggestion")
+<<<<<<< HEAD
 	public String suggestionPage(@ModelAttribute("suggestion") Suggestion suggestion,Principal principal,Model model) {
 		String user=principal.getName();
 		model.addAttribute("currentUser", userService.findByUsername(user));
@@ -75,3 +85,31 @@ public class RequestsController {
 
 }
 	}
+=======
+	public String suggestionPage(@ModelAttribute("suggestion") Suggestion suggestion) {
+		return "suggestion.jsp";
+	}
+	
+	
+	@RequestMapping(value="/water/new", method=RequestMethod.POST)
+    public String addWater(@Valid @ModelAttribute("water") Water myWater,BindingResult result,Principal principal,Model model) {
+        if (result.hasErrors()) {
+        	String user=principal.getName();
+    		model.addAttribute("currentUser", userService.findByUsername(user));
+            return "water.jsp";
+        }else{
+        	String username = principal.getName();
+        	User currentUser=  userService.findByUsername(username);
+        	Request request=new Request(currentUser);
+        	Request re=requestService.create(request);
+        	Water wa=requestService.createWater(myWater);
+        	requestService.updateWater(wa, re);
+        return "redirect:/water";
+
+        }
+
+
+}
+		
+}
+>>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
