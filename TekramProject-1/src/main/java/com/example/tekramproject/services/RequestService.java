@@ -3,9 +3,12 @@ package com.example.tekramproject.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Service;
 
 import com.example.tekramproject.models.Request;
+import com.example.tekramproject.models.Water;
 import com.example.tekramproject.repositories.QuittanceRepository;
 import com.example.tekramproject.repositories.RequestRepository;
 import com.example.tekramproject.repositories.RoleRepository;
@@ -38,8 +41,8 @@ public class RequestService {
 	}
 
 	//Create a request
-	public void create(Request request) {
-		requestRepository.save(request);
+	public Request create(Request request) {
+		return requestRepository.save(request);
 	}
 	// find the request by ID
 	public Request findById(Long id) {
@@ -60,4 +63,12 @@ public class RequestService {
 		requestRepository.deleteById(request.getId());
 	}
 
+	public Water createWater(Water myWater) {
+		return waterRepository.save(myWater);
+	}
+	public Water updateWater(Water wa,Request re) {
+		wa.setRequest(re);
+		return waterRepository.save(wa);
+
+}
 }
