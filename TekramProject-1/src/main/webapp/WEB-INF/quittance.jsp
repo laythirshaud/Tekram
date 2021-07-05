@@ -35,7 +35,7 @@
         </div>
         <div class="col">
             <div class="form-group">
-                <form:label path="signature">The Signature</form:label>
+                <form:label path="signature">Signature</form:label>
                 <form:input path="signature" type="text"  class="form-control is-invalid"/> 
             </div>
        </div>
