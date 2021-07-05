@@ -55,7 +55,7 @@ public class RequestsController {
 	
 	
 	@RequestMapping(value="/water/new", method=RequestMethod.POST)
-    public String addSuggestion(@Valid @ModelAttribute("water") Water myWater,BindingResult result,Principal principal,Model model) {
+    public String addWater(@Valid @ModelAttribute("water") Water myWater,BindingResult result,Principal principal,Model model) {
         if (result.hasErrors()) {
         	String user=principal.getName();
     		model.addAttribute("currentUser", userService.findByUsername(user));
