@@ -23,12 +23,12 @@
 				</div>
         </div>
         <div class="col">
-           <div class="form-group">
-					<label >National ID</label> <label  type="text"
-						class="form-control is-valid"> ${currentUser.username}</label>
-        </div>
+					<div class="form-group">
+						<label>National ID</label> <label type="text"
+							class="form-control is-valid"> ${currentUser.username}</label>
+					</div>
 
-        </div>
+				</div>
     </div>
     <div class="row">
         <div class="col">
