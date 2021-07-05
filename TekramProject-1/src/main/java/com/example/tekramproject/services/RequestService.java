@@ -3,9 +3,12 @@ package com.example.tekramproject.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Service;
 
 import com.example.tekramproject.models.Request;
+import com.example.tekramproject.models.Suggestion;
 import com.example.tekramproject.repositories.QuittanceRepository;
 import com.example.tekramproject.repositories.RequestRepository;
 import com.example.tekramproject.repositories.RoleRepository;
@@ -24,9 +27,9 @@ public class RequestService {
 	private TaxRepository taxRepository;
 	private WaterRepository waterRepository;
 
-	public RequestService(UserRepository userRepository, QuittanceRepository quittanceRepository, RequestRepository requestRepository,
-			RoleRepository roleRepository, SuggestionRepository suggestionRepository, TaxRepository taxRepository,
-			WaterRepository waterRepository) {
+	public RequestService(UserRepository userRepository, QuittanceRepository quittanceRepository,
+			RequestRepository requestRepository, RoleRepository roleRepository,
+			SuggestionRepository suggestionRepository, TaxRepository taxRepository, WaterRepository waterRepository) {
 
 		this.userRepository = userRepository;
 		this.quittanceRepository = quittanceRepository;
@@ -37,10 +40,11 @@ public class RequestService {
 		this.waterRepository = waterRepository;
 	}
 
-	//Create a request
-	public void create(Request request) {
-		requestRepository.save(request);
+	// Create a request
+	public Request create(Request request) {
+		return requestRepository.save(request);
 	}
+
 	// find the request by ID
 	public Request findById(Long id) {
 		Optional<Request> optionalrequest = requestRepository.findById(id);
@@ -51,13 +55,25 @@ public class RequestService {
 		}
 	}
 
-	//find all request
+	// find all requests
 	public List<Request> all() {
 		return (List<Request>) requestRepository.findAll();
 	}
-	//delete request
+
+	// delete request
 	public void distroy(Request request) {
 		requestRepository.deleteById(request.getId());
 	}
+
+	public Suggestion createSug(@Valid Suggestion sug) {
+		return suggestionRepository.save(sug);
+	}
+
+	public Suggestion updateSuggestion(Suggestion su, Request re) {
+		su.setRequest(re);
+		return suggestionRepository.save(su);
+	}
+
+	
 
 }

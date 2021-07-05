@@ -124,4 +124,15 @@ public class Request {
 		this.updatedAt = new Date();
 	}
 
+
+
+	public Request( User user) {
+		
+		Status = "pending";
+		this.user = user;
+	}
+
+
+	
+
 }
