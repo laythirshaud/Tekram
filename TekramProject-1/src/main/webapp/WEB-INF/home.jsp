@@ -57,14 +57,14 @@
 	<div class="card" style="width: 18rem;">
   <img class="card-img-top" src="img/water.png" alt="Water Services">
   <div class="card-body">
-    <p class="card-header"> Water Services</p>
+    <p class="card-header"><a href="/water"> Water Services</a></p>
   </div>
 
 </div>
 	<div class="card" style="width: 18rem;">
   <img class="card-img-top" src="img/tax.jpg" alt="Pay Taxes">
   <div class="card-body">
-    <p class="card-header"> Pay Taxes</p>
+    <p class="card-header"> <a href="/tax">Pay Taxes</a></p>
   </div>
 </div>
 </div>
@@ -72,13 +72,13 @@
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="img/quit.png" alt="Pay Taxes">
   <div class="card-body">
-    <p class="card-header"> Request Quittance</p>
+    <p class="card-header"><a href="/quittance">  Request Quittance</a></p>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="img/suggestion.jpg" alt="Pay Taxes">
   <div class="card-body">
-    <p class="card-header"> Suggestions and Complaints</p>
+    <p class="card-header"><a href="/suggestion"> Suggestions and Complaints</a></p>
   </div>
 </div>
 </div>
