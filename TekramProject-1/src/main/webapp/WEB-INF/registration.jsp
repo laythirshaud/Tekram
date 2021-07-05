@@ -67,7 +67,8 @@
 								<form:password class="form-control" path="passwordConfirmation" />
 							</p>
 							<input class="btn btn-primary mt-4" type="submit"
-								value="Register" />
+								value="Register" /><br>
+							<a href="/login">already registered ?</a>
 						</form:form>
 					</div>
 				</div>
