@@ -8,11 +8,9 @@ import javax.validation.Valid;
 import org.springframework.stereotype.Service;
 
 import com.example.tekramproject.models.Request;
-<<<<<<< HEAD
 import com.example.tekramproject.models.Suggestion;
-=======
 import com.example.tekramproject.models.Water;
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
+
 import com.example.tekramproject.repositories.QuittanceRepository;
 import com.example.tekramproject.repositories.RequestRepository;
 import com.example.tekramproject.repositories.RoleRepository;
@@ -44,11 +42,8 @@ public class RequestService {
 		this.waterRepository = waterRepository;
 	}
 
-<<<<<<< HEAD
-	// Create a request
-=======
+
 	//Create a request
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
 	public Request create(Request request) {
 		return requestRepository.save(request);
 	}
@@ -63,11 +58,7 @@ public class RequestService {
 		}
 	}
 
-<<<<<<< HEAD
-	// find all requests
-=======
-	//find all requests
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
+
 	public List<Request> all() {
 		return (List<Request>) requestRepository.findAll();
 	}
@@ -77,7 +68,6 @@ public class RequestService {
 		requestRepository.deleteById(request.getId());
 	}
 
-<<<<<<< HEAD
 	public Suggestion createSug(@Valid Suggestion sug) {
 		return suggestionRepository.save(sug);
 	}
@@ -89,7 +79,6 @@ public class RequestService {
 
 	
 
-=======
 	public Water createWater(Water myWater) {
 		return waterRepository.save(myWater);
 	}
@@ -98,5 +87,4 @@ public class RequestService {
 		return waterRepository.save(wa);
 
 }
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
 }

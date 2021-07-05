@@ -22,10 +22,7 @@
         </div>
         <div class="col">
             <div class="form-group">
-<<<<<<< HEAD
-=======
 
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
                 <form:label path="" >National ID</form:label> 
                 <form:label path="" type="text"
                     class="form-control is-valid"> 987654321</form:label>
@@ -59,10 +56,7 @@
         <div class="col">
             <div class="form-group">
                 <form:label path="buildinglicense">Bilding license</form:label>
-<<<<<<< HEAD
-=======
-                
->>>>>>> 204d4b52d9059dfb659025d643738ada954c4fd6
+
                 <form:input path="buildinglicense" type="text" class="form-control is-invalid" placeholder="Enter the Bilding license" />
             </div>
         </div>

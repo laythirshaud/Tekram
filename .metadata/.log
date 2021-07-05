@@ -6701,3 +6701,121 @@ java.lang.IllegalArgumentException: Cannot set lower sequence number for root (p
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 23:30:42.870
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 23:30:42.888
+!MESSAGE classpath=105 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 23:30:42.897
+!MESSAGE buffering callback sts4.classpath.cJgdAVtS TekramProject-1 false 105
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 23:30:42.898
+!MESSAGE executing callback sts4.classpath.cJgdAVtS 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 23:30:43.018
+!MESSAGE executing callback sts4.classpath.cJgdAVtS SUCCESS [done]
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:43.342
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:43.443
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:43.671
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:43.900
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:44.047
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:44.233
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.wst.dtd.core 4 4 2021-07-05 23:30:44.697
+!MESSAGE could not create content model for URI: jar:file:/C:/STS4/sts-4.10.0.RELEASE/plugins/org.eclipse.wst.standard.schemas_1.0.800.v201901071922.jar!/dtds/loose.dtd
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.core.resources 4 0 2021-07-05 23:34:15.546
+!MESSAGE Error occurred while reading master table file
+!STACK 0
+java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:275)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:352)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3399)
+	at org.eclipse.core.internal.resources.SaveManager.getBadSequenceNumberErrorMessage(SaveManager.java:1609)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1590)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1263)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-07-05 23:34:15.549
+!MESSAGE An internal error occurred during: "Periodic workspace save.".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot set lower sequence number for root (previous: 2, new: 1). Location: C:\Users\BisanCo\Desktop\Tekram Last Update\Tekram\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resourcesTimestamps and tree sequence numbers from file:
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1591)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1263)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 0 2021-07-05 23:40:30.903
+!MESSAGE Error occurred while reading master table file
+!STACK 0
+java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.base/java.nio.charset.CoderResult.throwException(CoderResult.java:275)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:352)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:188)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:181)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:326)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:392)
+	at java.base/java.nio.file.Files.readAllLines(Files.java:3399)
+	at org.eclipse.core.internal.resources.SaveManager.getBadSequenceNumberErrorMessage(SaveManager.java:1609)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1590)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1263)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-07-05 23:40:30.907
+!MESSAGE An internal error occurred during: "Periodic workspace save.".
+!STACK 0
+java.lang.IllegalArgumentException: Cannot set lower sequence number for root (previous: 2, new: 1). Location: C:\Users\BisanCo\Desktop\Tekram Last Update\Tekram\.metadata\.plugins\org.eclipse.core.resources\.safetable\org.eclipse.core.resourcesTimestamps and tree sequence numbers from file:
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.resources.SaveManager.validateMasterTableBeforeSave(SaveManager.java:1591)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1263)
+	at org.eclipse.core.internal.resources.SaveManager.saveMasterTable(SaveManager.java:1255)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1232)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:55)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
