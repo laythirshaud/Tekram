@@ -98,9 +98,11 @@
 			</div>
         <div class="col">
             <div class="form-group">
-                <form:label path="buildinglicense">Bilding license</form:label>
-
+                <form:label path="buildinglicense">Building license</form:label>
                 <form:input path="buildinglicense" type="text" class="form-control is-invalid" placeholder="Enter the Bilding license" />
+            	<small class="invalid-feedback">
+                        The Building License must be 10 numbers
+                </small>
             </div>
         </div>
     </div>
