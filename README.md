@@ -52,6 +52,8 @@ service from the municipality.
 # Admin Dashboard Page
  - On the Admin dashboard, the manger will see all the request has been sent from user.
  - The admin can check the requst and give the user request aproval or refuse his request regarding the policy in the municipality. 
+ ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/Capture.PNG)
+ ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/Capture1.PNG)
 
 # Authors
 - Dara
