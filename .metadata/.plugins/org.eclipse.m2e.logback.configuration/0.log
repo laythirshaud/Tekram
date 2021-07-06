@@ -1986,3 +1986,47 @@
 2021-07-06 01:43:29,739 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-07-06 01:43:29,739 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2021-07-06 01:43:29,740 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 01:43:29,742 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 01:43:29,742 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 01:43:29,743 [Worker-22: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:07:16,977 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:07:16,978 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:07:16,979 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:07:16,979 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:07:16,984 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:07:16,984 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:07:16,984 [Worker-25: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:08:33,077 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:08:33,078 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:08:33,078 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:08:33,078 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:08:33,081 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:08:33,082 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:08:33,082 [Worker-34: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:09:43,506 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:09:43,507 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:09:43,507 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:09:43,508 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:09:43,510 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:09:43,510 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:09:43,510 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:11:09,732 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:11:09,733 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:11:09,733 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:11:09,733 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:11:09,736 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:11:09,736 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:11:09,736 [Worker-36: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:13:06,564 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:13:06,565 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:13:06,565 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:13:06,566 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:13:06,568 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:13:06,568 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:13:06,568 [Worker-35: Launching TekramProject-1 - TekramProject1Application] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\BisanCo\Desktop\project import\project last update\Tekram\TekramProject-1\src\test\resources
+2021-07-06 11:17:33,524 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:17:33,525 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-06 11:17:33,526 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:17:33,527 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-06 11:17:33,534 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-06 11:17:33,534 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
