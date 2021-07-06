@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.example.tekramproject.models.Request;
 import com.example.tekramproject.services.RequestService;
-import com.example.tekramproject.services.UserService;
 import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Chunk;
 import com.itextpdf.text.Document;
@@ -21,16 +20,19 @@ import com.itextpdf.text.pdf.PdfWriter;
 @Controller
 public class ReplyController {
 
-	private UserService userService;
+	
 	private RequestService requestService;
 
-	public ReplyController(UserService userService, RequestService requestService) {
-		this.userService = userService;
+	
+	
+	
+	public ReplyController(RequestService requestService) {
 		this.requestService = requestService;
 	}
 
-	
-	
+
+
+
 	@RequestMapping("/genpdf/{id}")
 	public String generatePdf(@PathVariable("id") Long id, Model model) {
 

@@ -11,7 +11,7 @@
 	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<title>Insert title here</title>
+<title>Tax Form</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a

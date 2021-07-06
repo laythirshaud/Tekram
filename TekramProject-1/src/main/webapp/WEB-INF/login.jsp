@@ -282,7 +282,7 @@ input[type=text]:placeholder {
         <c:out value="${logoutMessage}"></c:out>
     </c:if>
    
-    <c:if test="${errorMessage != null}">
+   <c:if test="${errorMessage != null}">
         <c:out value="${errorMessage}"></c:out>
     </c:if>
 
