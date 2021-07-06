@@ -53,13 +53,25 @@
 
 	</div>
 	</nav>
-	<br>
+	
+	
+	
+	
+	
+		<div style="height: 400px; text-align: center;">
 		<br>
 		<br>
-		<h1>Your request has been sent</h1>
-<br>
+		<h1>Welcom ${currentUser.firstname} ${currentUser.lastname}</h1>
 		<br>
+		<h2 style="color: green;">Your request has been sent </h1>
 		<br>
+		<h4>We will replay to your request within 72 hours</h4>
+
+		</div>
+		
+		
+		
+		
 		
      <footer class="container-fluid text-center">
 	<div class="bottom">

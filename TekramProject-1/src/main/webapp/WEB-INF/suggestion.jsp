@@ -124,8 +124,8 @@
 		<div style="width: 500px margin:-25px 0 0 0;";">
 			<div class="form-group">
 				<form:label path="description">Discription</form:label>
-				<form:input path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
-<small class="invalid-feedback">
+				<form:textarea path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
+			<small class="invalid-feedback">
                         The Discription must be 10 to 255 characters
                 </small>
 			</div>
