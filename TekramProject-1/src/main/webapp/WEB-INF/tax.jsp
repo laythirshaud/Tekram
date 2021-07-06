@@ -54,7 +54,9 @@
 
 	</div>
 	</nav>
-
+	<br>
+		<br>
+		<br>
  <form:form action="tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
         <div class="row">
         
@@ -136,6 +138,9 @@
         <input type="submit" value="Send" class="btn btn-primary btn-lg">
 
      </form:form>
+     	<br>
+		<br>
+		<br>
      <footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">
