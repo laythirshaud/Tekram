@@ -91,8 +91,8 @@ footer {
 		<tbody>
 			<c:forEach items="${allwater}" var="water">
 				<tr>
-					<td scope="row">${water.id}</td>
-					<td><a href="/request/${water.id}">${water.request.user.firstname }</a></td>
+					<td scope="row">${water.request.id}</td>
+					<td><a href="/request/${water.request.id}">${water.request.user.firstname }</a></td>
 					<td>${water.request.status }</td>
 					
 				</tr>
@@ -113,8 +113,8 @@ footer {
 		<tbody>
 			<c:forEach items="${allquit}" var="quit">
 				<tr>
-					<td scope="row">${quit.id}</td>
-					<td><a href="/request/${quit.id}">${quit.request.user.firstname }</a></td>
+					<td scope="row">${quit.request.id}</td>
+					<td><a href="/request/${quit.request.id}">${quit.request.user.firstname }</a></td>
 					<td>${quit.request.status }</td>
 					
 				</tr>
@@ -135,8 +135,8 @@ footer {
 		<tbody>
 			<c:forEach items="${alltax}" var="tax">
 				<tr>
-					<td scope="row">${tax.id}</td>
-					<td><a href="/request/${tax.id}">${tax.request.user.firstname }</a></td>
+					<td scope="row">${tax.request.id}</td>
+					<td><a href="/request/${tax.request.id}">${tax.request.user.firstname }</a></td>
 					<td>${tax.request.status }</td>
 					
 				</tr>
@@ -158,8 +158,8 @@ footer {
 		<tbody>
 			<c:forEach items="${allsug}" var="sug">
 				<tr>
-					<td scope="row">${sug.id}</td>
-					<td><a href="/request/${sug.id}">${sug.request.user.firstname }</a></td>
+					<td scope="row">${sug.request.id}</td>
+					<td><a href="/request/${sug.request.id}">${sug.request.user.firstname }</a></td>
 					<td>${sug.request.status }</td>
 					
 				</tr>

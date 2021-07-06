@@ -47,7 +47,7 @@ public class Request {
 	}
 
 	public Request(User user) {
-		Status = "pending";
+		this.Status = "pending";
 		this.user = user;
 	}
 	

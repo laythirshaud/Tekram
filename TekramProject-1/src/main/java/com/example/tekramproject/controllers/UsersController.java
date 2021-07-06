@@ -61,6 +61,14 @@ public class UsersController {
 	        userService.saveWithUserRole(user);
 	        return "redirect:/home";
 	    }
+	  
+	  @RequestMapping("/declind/{id}")
+	  public String dic(@PathVariable("id") long id) {
+		  Request req = reqser.findById(id);
+		  req.setStatus("Declinde");
+		  reqser.create(req);
+		  return "redirect:/admin";
+	  }
 	   
 	  @RequestMapping("/login")
 	    public String loginpage(@ModelAttribute("user") User user) {

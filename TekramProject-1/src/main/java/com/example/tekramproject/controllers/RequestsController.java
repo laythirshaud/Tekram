@@ -33,10 +33,15 @@ public class RequestsController {
 
 	private UserService userService;
 	private RequestService requestService;
+	private RequestService reqser;
 
-	public RequestsController(UserService userService, RequestService requestService) {
+
+	public RequestsController(UserService userService, RequestService requestService,RequestService reqser
+) {
 		this.userService = userService;
 		this.requestService = requestService;
+		this.reqser = reqser;
+		
 	}
 
 	@RequestMapping("/water")
@@ -161,9 +166,10 @@ public class RequestsController {
 
 	}
 
+	
 	@RequestMapping("/genpdf/{id}")
 	public String generatePdf(@PathVariable("id") Long id) {
-
+		
 		Document document = new Document();
 //		Request request = requestService.findById(id);
 //       String firstname= request.getUser().getFirstname();
@@ -180,7 +186,10 @@ public class RequestsController {
 
 			document.add(chunk);
 			document.close();
-
+			
+			Request req = reqser.findById(id);
+			req.setStatus("Approved");
+			reqser.create(req);			
 		} catch (Exception e) {
 
 			System.out.print("Error");
