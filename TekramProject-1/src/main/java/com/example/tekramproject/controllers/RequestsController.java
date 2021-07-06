@@ -62,6 +62,14 @@ public class RequestsController {
 
 		return "suggestion.jsp";
 	}
+	@RequestMapping("/done")
+	public String done(@ModelAttribute("suggestion") Suggestion suggestion, Model model,
+			Principal principal) {
+		String user = principal.getName();
+		model.addAttribute("currentUser", userService.findByUsername(user));
+
+		return "Done.jsp";
+	}
 
 	@RequestMapping("/tax")
 	public String suggestionPage(@ModelAttribute("tax") Tax tax, Model model, Principal principal) {
@@ -85,7 +93,7 @@ public class RequestsController {
 			Request re = requestService.create(request);
 			Water wa = requestService.createWater(myWater);
 			requestService.updateWater(wa, re);
-			return "redirect:/water";
+			return "redirect:/done";
 
 		}
 
@@ -105,7 +113,7 @@ public class RequestsController {
 			Request re = requestService.create(request);
 			Tax tax = requestService.createTax(myTax);
 			requestService.updateTax(tax, re);
-			return "redirect:/tax";
+			return "redirect:/done";
 
 		}
 
@@ -126,7 +134,7 @@ public class RequestsController {
 			Request re = requestService.create(request);
 			Suggestion su = requestService.createSug(mySuggestion);
 			requestService.updateSuggestion(su, re);
-			return "redirect:/suggestion";
+			return "redirect:/done";
 
 		}
 
@@ -147,7 +155,7 @@ public class RequestsController {
 			Request re = requestService.create(request);
 			Quittance qu = requestService.createQui(myQuittance);
 			requestService.updateQuittance(qu, re);
-			return "redirect:/quittance";
+			return "redirect:/done";
 
 		}
 
