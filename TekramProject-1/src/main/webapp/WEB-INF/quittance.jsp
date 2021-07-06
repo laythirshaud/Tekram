@@ -14,6 +14,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
 		class="navbar-brand" href="https://www.ramallah.ps/ar_page.aspx?id=d4yPuGa3060837648ad4yPuG">Ramallah Municipality</a>
 	<button class="navbar-toggler" type="button" data-toggle="collapse"

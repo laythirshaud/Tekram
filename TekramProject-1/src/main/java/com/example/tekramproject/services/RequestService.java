@@ -60,9 +60,33 @@ public class RequestService {
 		}
 	}
 
+	
+	public Water findwaterById(Long id) {
+		Optional<Water> optionalrequest = waterRepository.findById(id);
+		if (optionalrequest.isPresent()) {
+			return optionalrequest.get();
+		} else {
+			return null;
+		}
+	}
 
 	public List<Request> all() {
 		return (List<Request>) requestRepository.findAll();
+	}
+	
+	public List<Water> allwater() {
+		return (List<Water>) waterRepository.findAll();
+	}
+	public List<Quittance> allquit() {
+		return (List<Quittance>) quittanceRepository.findAll();
+	}
+	
+	public List<Tax> alltax() {
+		return (List<Tax>) taxRepository.findAll();
+	}
+	
+	public List<Suggestion> allsug() {
+		return (List<Suggestion>) suggestionRepository.findAll();
 	}
 
 	// delete request
