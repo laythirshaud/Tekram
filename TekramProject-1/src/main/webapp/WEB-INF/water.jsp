@@ -65,7 +65,7 @@
     <div class="row">
         <div class="col">
 				<div class="form-group">
-					<label path="">Last Name</label> <label type="text"
+					<label path="">Phone Name</label> <label type="text"
 						class="form-control is-valid"> ${currentUser.phonenumber}</label>
 
 				</div>
