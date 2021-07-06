@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%> 
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
 <body>
@@ -40,7 +43,6 @@
 					Us</a></li>
 
 		</ul>
-		
 		<form class="form-inline my-2 my-lg-0" id="logoutForm" method="POST"
 			action="/logout">
 			<input type="hidden" name="${_csrf.parameterName}"
@@ -48,97 +50,30 @@
 				class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				value="Logout" />
 		</form>
-		
 
 	</div>
 	</nav>
+	
+	
+	
+	
+	
+		<div style="height: 400px; text-align: center;">
 		<br>
 		<br>
+		<h1>Welcom ${currentUser.firstname} ${currentUser.lastname}</h1>
 		<br>
-	<form:form action="/suggestion/new" method="POST"  modelAttribute="suggestion" style="width: 500px; margin: auto;">
-		<div class="row">
-
-
-			<div class="col">
-				<div class="form-group">
-					<label >First Name</label> <label  type="text"
-						class="form-control is-valid">${currentUser.firstname}</label>
-
-				</div>
-			</div>
-			<div class="col">
-				<div class="form-group">
-					<label >National ID</label> <label  type="text"
-						class="form-control is-valid"> ${currentUser.username}</label>
-
-				</div>
-			</div>
-
+		<h2 style="color: blue;">Your request has been sent </h1>
+		<br>
+		<h4>We will reply to your request within 72 hours</h4>
 
 		</div>
-		<div class="row">
-
-
-			<div class="col">
-				<div class="form-group">
-					<label>Middle Name</label> <label type="text"
-						class="form-control is-valid"> ${currentUser.middlename}</label>
-
-				</div>
-			</div>
-			<div class="col">
-				<div class="form-group">
-					<label>Address</label> <label type="text"
-						class="form-control is-valid"> ${currentUser.address}</label>
-
-				</div>
-			</div>
-
-
-		</div>
-		<div class="row">
-
-
-			<div class="col">
-				<div class="form-group">
-					<label path="">Last Name</label> <label type="text"
-						class="form-control is-valid"> ${currentUser.lastname}</label>
-
-				</div>
-			</div>
-			<div class="col">
-				<div class="form-group">
-					<form:label path="title">Title</form:label> 
-					<form:input path="title"  type="text"
-						class="form-control is-invalid" placeholder="Enter the title"/>
-				<small class="invalid-feedback">
-                        The Title at least 5 characters
-                </small>
-
-				</div>
-			</div>
-
-
-		</div>
-
-		<div style="width: 500px margin:-25px 0 0 0;";">
-			<div class="form-group">
-				<form:label path="description">Discription</form:label>
-				<form:textarea path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
-			<small class="invalid-feedback">
-                        The Discription must be 10 to 255 characters
-                </small>
-			</div>
-		</div>
-
-
-		<input type="submit" class="btn btn-primary btn-lg" value="Send">
-
-	</form:form>
-	<br>
-		<br>
-		<br>
-	  <footer class="container-fluid text-center">
+		
+		
+		
+		
+		
+     <footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">
 			<h5>Contact Us</h5>

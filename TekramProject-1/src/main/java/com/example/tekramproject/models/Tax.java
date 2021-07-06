@@ -14,12 +14,15 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 
+import org.hibernate.validator.constraints.Range;
+
 @Entity
 @Table(name = "taxes")
 public class Tax {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@Range(min = (long) 20.0)
 	private double cost;
 	@Column(updatable = false)
 	private Date createdAt;

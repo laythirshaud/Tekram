@@ -7649,6 +7649,7 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 11:56:41.886
 !MESSAGE executing callback sts4.classpath.QHNBHQXe SUCCESS [done]
+<<<<<<< HEAD
 >>>>>>> 0322765dd17b08c8bc051d1771cba197d1668aa8
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:17:38.188
@@ -7857,3 +7858,170 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+=======
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:53:44.480
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QHNBHQXe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:53:44.481
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QHNBHQXe
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:53:44.482
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:53:44.483
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QHNBHQXe => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:05.590
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:05.591
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@780715e3[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=555)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:05.591
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.591
+!MESSAGE Boot LS startup time from start to initialized: 1999ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.668
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YhWhOYmcisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.669
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.670
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.671
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.671
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.672
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.YhWhOYmc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.677
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.681
+!MESSAGE buffering callback sts4.classpath.YhWhOYmc TekramProject-1 false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:07.682
+!MESSAGE executing callback sts4.classpath.YhWhOYmc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 12:57:08.082
+!MESSAGE executing callback sts4.classpath.YhWhOYmc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:02.478
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YhWhOYmc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:02.481
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.YhWhOYmc
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:02.483
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:02.485
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.YhWhOYmc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:21.712
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:21.713
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@780715e3[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=555)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:21.714
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.039
+!MESSAGE Boot LS startup time from start to initialized: 3324ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.168
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vfteeJOTisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.170
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.171
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.172
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.172
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.173
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vfteeJOT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.183
+!MESSAGE classpath=109 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.191
+!MESSAGE buffering callback sts4.classpath.vfteeJOT TekramProject-1 false 109
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.192
+!MESSAGE executing callback sts4.classpath.vfteeJOT 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 13:00:25.825
+!MESSAGE executing callback sts4.classpath.vfteeJOT SUCCESS [done]
+>>>>>>> ad1fdf0d82e2f2b828304a914280aab0dbb50f3f
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:34.641
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:34.644
+!MESSAGE classpath=124 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:34.646
+!MESSAGE buffering callback sts4.classpath.pjZQiBbJ TekramProject-1 false 124
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:34.647
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:34.745
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:35.027
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:35.030
+!MESSAGE classpath=124 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:35.042
+!MESSAGE buffering callback sts4.classpath.pjZQiBbJ TekramProject-1 false 124
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:35.043
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:45:35.132
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:47:58.347
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:47:58.350
+!MESSAGE classpath=124 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:47:58.351
+!MESSAGE buffering callback sts4.classpath.pjZQiBbJ TekramProject-1 false 124
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:47:58.351
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:47:58.380
+!MESSAGE executing callback sts4.classpath.pjZQiBbJ SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:48:09.755
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pjZQiBbJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:48:09.756
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.pjZQiBbJ
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:48:09.757
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-06 16:48:09.757
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pjZQiBbJ => OK
