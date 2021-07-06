@@ -25,9 +25,33 @@ Services,news,social network links etc..
 service from the municipality.
  - Footer(copyrights,contact us,social media icons with urls for social, about us).
     ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/home.png)
+# Water Service Page
+ - On this page the user can send a request to request a new water subscription.
+ - The user sholud insert the buliding license, and we will get the other require information from database like name,phone ,address.
+ - when the user pressed on the submit button the request will send to the admin dashboard.
+     ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/waters.png)
+
+# Tax page 
+ - On this page The user can pay part of the taxs to the municipality.
+ - The user sholud insert the amouant that he wants to pay, and we will get the other require information from database like name,phone ,address.
+ - when the user pressed on the submit button the request will send to the admin dashboard.
+ ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/Tax.png)
+# Quittance Page 
+ - On this page The user can request a quittance from the municipality.
+ - The user sholud insert his signiture, and we will get the other require information from database like name,phone ,address.
+ - when the user pressed on the submit button the request will send to the admin dashboard.
+  ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/quittance.png)
+
+# Complaints and Suggestions Page
+ - On this page The user can senf his Complaints and Suggestions to municipality.
+ - The user sholud insert the title and descriotion for his request , and we will get the other require information from database like name,phone ,address.
+ - when the user pressed on the submit button the request will send to the admin dashboard.
+   ![Reg](https://github.com/ahmadmalbzoor/image/blob/master/sugg.png)
 
 
-
+# Admin Dashboard Page
+ - On the Admin dashboard, the manger will see all the request has been sent from user.
+ - The admin can check the requst and give the user request aproval or refuse his request regarding the policy in the municipality. 
 
 # Authors
 - Dara
