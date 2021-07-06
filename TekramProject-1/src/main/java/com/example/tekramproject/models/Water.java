@@ -15,12 +15,15 @@ import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name = "waters")
 public class Water {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotNull
 	@Size(min = 10, max = 10)
 	private String buildinglicense;
 	@Column(updatable = false)

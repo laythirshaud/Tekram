@@ -11,7 +11,7 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
 	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 	crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
@@ -54,6 +54,9 @@
 
 	</div>
 	</nav>
+		<br>
+		<br>
+		<br>
 	<div style="width: 500px; margin: auto;">
 		<form:form method="POST" action="/quittance/new"
 			modelAttribute="quittance">
@@ -85,11 +88,14 @@
 						<form:label path="signature">Signature</form:label>
 						<form:input path="signature" type="text"
 							class="form-control is-invalid" />
+							<small class="invalid-feedback">
+                        The Signature must be 4 to 10 characters
+                </small>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
+				<div class="col"style="width:237px; margin:-25px 0 0 0;">
 					<div class="form-group">
 						<label path="">Last Name</label> <label type="text"
 							class="form-control is-valid"> ${currentUser.lastname}</label>
@@ -103,7 +109,9 @@
 			<input type="submit" class="btn btn-primary btn-lg" value="Send" />
 		</form:form>
 	</div>
-	
+		<br>
+		<br>
+		<br>
 	<footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">

@@ -10,7 +10,7 @@
 	integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -54,7 +54,9 @@
 
 	</div>
 	</nav>
-
+	<br>
+		<br>
+		<br>
  <form:form action="tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
         <div class="row">
         
@@ -136,6 +138,9 @@
         <input type="submit" value="Send" class="btn btn-primary btn-lg">
 
      </form:form>
+     	<br>
+		<br>
+		<br>
      <footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">
