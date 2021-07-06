@@ -68,14 +68,15 @@
     <div class="jumbotron">
     <h1 class="display-4">
         Welcome to admin Page
-        <c:out value="MR. ${currentUser.firstname}"></c:out>
+        <c:out value=" ${currentUser.firstname}"></c:out>
     </h1>
-  <p class="lead">Here you can control on all the requestes</p>
+  <p class="lead">Here you can control on all the requests</p>
   <hr class="my-4">
   <p>Please click on the button to go to the requests page</p>
   <a class="btn btn-primary btn-lg" href="/admin/requests" role="button">Requests</a>
 </div>
 </center>
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

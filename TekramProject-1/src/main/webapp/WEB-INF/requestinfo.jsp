@@ -56,7 +56,7 @@ footer {
 	}
 }
 </style>
-<title>Hello, world!</title>
+<title>Request Information</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -82,10 +82,16 @@ footer {
 			<h1 class="display-4">This Request Made By
 				${water.request.user.firstname}</h1>
 			<p class="lead">This Request is : ${reqq.status }</p>
+<<<<<<< HEAD
 			<p class="lead">User ID : ${water.request.user.username }</p>
 			<p class="lead">User Phone Number :
 				${water.request.user.phonenumber }</p>
 			<p class="lead">User Address : ${water.request.user.address }</p>
+=======
+			<p class="lead">User ID : ${reqq.user.username }</p>
+			<p class="lead">User Phone Number : ${reqq.user.phonenumber }</p>
+			<p class="lead">User Address : ${reqq.user.address }</p>
+>>>>>>> 3ba04b9e5885cd3a8409544cad30a4a9f6fe7428
 			<hr class="my-4">
 			<p>Please click on the button to Accept the request or Decline it</p>
 			<a class="btn btn-primary btn-lg" href="/genpdf/${reqq.id}"

@@ -57,7 +57,7 @@ footer {
 	}
 }
 </style>
-<title>Hello, world!</title>
+<title>Admin Page</title>
 </head>
 <body>
 	<nav class="navbar navbar-inverse">

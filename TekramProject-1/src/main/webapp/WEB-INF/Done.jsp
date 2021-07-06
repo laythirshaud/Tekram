@@ -10,7 +10,7 @@
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Request Sent</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a

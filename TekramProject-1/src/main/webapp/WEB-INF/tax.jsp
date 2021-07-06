@@ -11,7 +11,7 @@
 	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
-<title>Insert title here</title>
+<title>Tax Form</title>
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light"> <a
@@ -57,7 +57,7 @@
 	<br>
 		<br>
 		<br>
- <form:form action="tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
+ <form:form action="/tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
         <div class="row">
         
         

@@ -1,6 +1,5 @@
 package com.example.tekramproject.controllers;
 
-import java.io.FileOutputStream;
 import java.security.Principal;
 
 import javax.validation.Valid;
@@ -9,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -21,12 +19,6 @@ import com.example.tekramproject.models.User;
 import com.example.tekramproject.models.Water;
 import com.example.tekramproject.services.RequestService;
 import com.example.tekramproject.services.UserService;
-import com.itextpdf.text.BaseColor;
-import com.itextpdf.text.Chunk;
-import com.itextpdf.text.Document;
-import com.itextpdf.text.Font;
-import com.itextpdf.text.FontFactory;
-import com.itextpdf.text.pdf.PdfWriter;
 
 @Controller
 public class RequestsController {
@@ -166,6 +158,7 @@ public class RequestsController {
 
 	}
 
+<<<<<<< HEAD
 	
 	@RequestMapping("/genpdf/{id}")
 	public String generatePdf(@PathVariable("id") Long id) {
@@ -197,4 +190,9 @@ public class RequestsController {
 
 		return "redirect:/admin";
 	}
+=======
+
+	
+	
+>>>>>>> 3ba04b9e5885cd3a8409544cad30a4a9f6fe7428
 }
