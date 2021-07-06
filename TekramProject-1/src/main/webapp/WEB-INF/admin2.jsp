@@ -78,25 +78,96 @@ footer {
 
 		</div>
 	</nav>
-	<center>
-		<h1>Table Name</h1>
-		<table class="table">
-			<thead>
+
+	<h1>Water Requests</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#ID</th>
+				<th scope="col">Requester Name</th>
+				<th scope="col">Request Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${allwater}" var="water">
 				<tr>
-					<th scope="col">#ID</th>
-					<th scope="col">Requester Name</th>
+					<td scope="row">${water.id}</td>
+					<td><a href="/request/${water.id}">${water.request.user.firstname }</a></td>
+					<td>${water.request.status }</td>
+					
 				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${req}" var="reqq">
-					<tr>
-						<th scope="row">${reqq.id}</th>
-						<td><a href="/request/${reqq.id}">${reqq.user.firstname }</a></td>
-					</tr>
-				</c:forEach>
-			</tbody>
-		</table>
-	</center>
+			</c:forEach>
+			
+		</tbody>
+	</table>
+	
+	<h1>Quittance Requests</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#ID</th>
+				<th scope="col">Requester Name</th>
+				<th scope="col">Request Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${allquit}" var="quit">
+				<tr>
+					<td scope="row">${quit.id}</td>
+					<td><a href="/request/${quit.id}">${quit.request.user.firstname }</a></td>
+					<td>${quit.request.status }</td>
+					
+				</tr>
+			</c:forEach>
+			
+		</tbody>
+	</table>
+	
+		<h1>Tax Requests</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#ID</th>
+				<th scope="col">Requester Name</th>
+				<th scope="col">Request Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${alltax}" var="tax">
+				<tr>
+					<td scope="row">${tax.id}</td>
+					<td><a href="/request/${tax.id}">${tax.request.user.firstname }</a></td>
+					<td>${tax.request.status }</td>
+					
+				</tr>
+			</c:forEach>
+			
+		</tbody>
+	</table>
+	
+	
+		<h1>Suggestion Requests</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th scope="col">#ID</th>
+				<th scope="col">Requester Name</th>
+				<th scope="col">Request Status</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${allsug}" var="sug">
+				<tr>
+					<td scope="row">${sug.id}</td>
+					<td><a href="/request/${sug.id}">${sug.request.user.firstname }</a></td>
+					<td>${sug.request.status }</td>
+					
+				</tr>
+			</c:forEach>
+			
+		</tbody>
+	</table>
+
 	<!-- Optional JavaScript; choose one of the two! -->
 
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

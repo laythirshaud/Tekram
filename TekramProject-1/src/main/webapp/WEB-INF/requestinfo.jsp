@@ -80,13 +80,16 @@ footer {
 	<center style="margin: 50px">
 		<div class="jumbotron">
 			<h1 class="display-4">This Request Made By
-				${reqq.user.firstname}</h1>
+				${water.request.user.firstname}</h1>
 			<p class="lead">This Request is : ${reqq.status }</p>
+			<p class="lead">User ID : ${water.request.user.username }</p>
+			<p class="lead">User Phone Number : ${water.request.user.phonenumber }</p>
+			<p class="lead">User Address : ${water.request.user.address }</p>
 			<hr class="my-4">
 			<p>Please click on the button to Accept the request or Decline it</p>
-			<a class="btn btn-primary btn-lg" href="/admin/requests"
+			<a class="btn btn-primary btn-lg" href="/genpdf/${reqq.id}"
 				role="button">Accept</a> <a class="btn btn-danger btn-lg"
-				href="/admin/requests" role="button">Decline</a>
+				href="/admin" role="button">Decline</a>
 		</div>
 	</center>
 	<center></center>

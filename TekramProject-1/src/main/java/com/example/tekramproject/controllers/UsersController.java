@@ -14,8 +14,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.tekramproject.models.Quittance;
 import com.example.tekramproject.models.Request;
+import com.example.tekramproject.models.Suggestion;
+import com.example.tekramproject.models.Tax;
 import com.example.tekramproject.models.User;
+import com.example.tekramproject.models.Water;
 import com.example.tekramproject.repositories.RequestRepository;
 import com.example.tekramproject.services.RequestService;
 import com.example.tekramproject.services.UserService;
@@ -86,12 +90,24 @@ public class UsersController {
 	    public String admin2(Model model) {
 	    	List<Request> req = reqser.all();
 	    	model.addAttribute("req",req);
+	    	List<Water> water = reqser.allwater();
+	    	model.addAttribute("allwater",water);
+	    	List<Quittance> quittance = reqser.allquit();
+	    	model.addAttribute("allquit",quittance);
+	    	List<Tax> tax = reqser.alltax();
+	    	model.addAttribute("alltax", tax);
+	    	List<Suggestion> sug = reqser.allsug();
+	    	model.addAttribute("allsug", sug);
 	        return "admin2.jsp";
 	    }
 	    @RequestMapping("/request/{id}")
 	    public String request(Model model,@PathVariable("id") long id) {
 	    	Request req = reqser.findById(id);
 	    	model.addAttribute("reqq",req);
+	    	Water water = reqser.findwaterById(id);
+	    	model.addAttribute("water",water);
+	    	List<Quittance> quittance = reqser.allquit();
+	    	model.addAttribute("allquit",quittance);
 	        return "requestinfo.jsp";
 	    }
 
