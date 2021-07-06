@@ -57,7 +57,7 @@
 	<br>
 		<br>
 		<br>
- <form:form action="tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
+ <form:form action="/tax/new" method="POST" modelAttribute="tax" style="width: 500px; margin:auto;">
         <div class="row">
         
         

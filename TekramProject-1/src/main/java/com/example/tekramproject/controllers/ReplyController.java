@@ -43,7 +43,7 @@ public class ReplyController {
   
 
 		try {
-			String s = " request" + id;
+			String s = firstname+"_"+lastname+"_request_" + id;
 			model.addAttribute("s", s);
 			PdfWriter.getInstance(document,
 					new FileOutputStream("C:\\Users\\Dara\\Desktop\\municipalityfiles\\" + s + ".pdf"));
