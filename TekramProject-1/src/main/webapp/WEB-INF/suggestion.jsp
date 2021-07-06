@@ -40,6 +40,7 @@
 					Us</a></li>
 
 		</ul>
+		
 		<form class="form-inline my-2 my-lg-0" id="logoutForm" method="POST"
 			action="/logout">
 			<input type="hidden" name="${_csrf.parameterName}"
@@ -47,9 +48,13 @@
 				class="btn btn-outline-success my-2 my-sm-0" type="submit"
 				value="Logout" />
 		</form>
+		
 
 	</div>
 	</nav>
+		<br>
+		<br>
+		<br>
 	<form:form action="/suggestion/new" method="POST"  modelAttribute="suggestion" style="width: 500px; margin: auto;">
 		<div class="row">
 
@@ -130,6 +135,9 @@
 		<input type="submit" class="btn btn-primary btn-lg" value="Send">
 
 	</form:form>
+	<br>
+		<br>
+		<br>
 	  <footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">

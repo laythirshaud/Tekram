@@ -54,6 +54,9 @@
 
 	</div>
 	</nav>
+		<br>
+		<br>
+		<br>
 	<div style="width: 500px; margin: auto;">
 		<form:form method="POST" action="/quittance/new"
 			modelAttribute="quittance">
@@ -106,7 +109,9 @@
 			<input type="submit" class="btn btn-primary btn-lg" value="Send" />
 		</form:form>
 	</div>
-	
+		<br>
+		<br>
+		<br>
 	<footer class="container-fluid text-center">
 	<div class="bottom">
 		<div class="part">

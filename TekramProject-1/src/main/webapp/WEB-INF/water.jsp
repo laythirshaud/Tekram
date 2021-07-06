@@ -53,7 +53,9 @@
 	</div>
 	</nav>
   <div style="width: 500px; margin: auto;">
-  
+  	<br>
+		<br>
+		<br>
   <form:form method="POST" action="/water/new" modelAttribute="water">
     <div class="row">
    
@@ -122,7 +124,9 @@
 								value="Send" />
   </form:form>
 </div>
-
+	<br>
+		<br>
+		<br>
 
 <footer class="container-fluid text-center">
 	<div class="bottom">
