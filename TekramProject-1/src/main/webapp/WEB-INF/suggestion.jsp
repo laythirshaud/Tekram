@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 <title>Insert title here</title>
 </head>
 <body>
@@ -111,7 +111,9 @@
 					<form:label path="title">Title</form:label> 
 					<form:input path="title"  type="text"
 						class="form-control is-invalid" placeholder="Enter the title"/>
-
+				<small class="invalid-feedback">
+                        The Title at least 5 characters
+                </small>
 
 				</div>
 			</div>
@@ -119,11 +121,13 @@
 
 		</div>
 
-		<div style="width: 500px;">
+		<div style="width: 500px margin:-25px 0 0 0;";">
 			<div class="form-group">
 				<form:label path="description">Discription</form:label>
 				<form:input path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
-
+<small class="invalid-feedback">
+                        The Discription must be 10 to 255 characters
+                </small>
 			</div>
 		</div>
 
