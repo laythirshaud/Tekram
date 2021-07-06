@@ -85,6 +85,9 @@
 						<form:label path="signature">Signature</form:label>
 						<form:input path="signature" type="text"
 							class="form-control is-invalid" />
+							<small class="invalid-feedback">
+                        The Signature must be 4 to 10 characters
+                </small>
 					</div>
 				</div>
 			</div>

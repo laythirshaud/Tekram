@@ -106,7 +106,9 @@
 					<form:label path="title">Title</form:label> 
 					<form:input path="title"  type="text"
 						class="form-control is-invalid" placeholder="Enter the title"/>
-
+				<small class="invalid-feedback">
+                        The Title at least 5 characters
+                </small>
 
 				</div>
 			</div>
@@ -118,7 +120,9 @@
 			<div class="form-group">
 				<form:label path="description">Discription</form:label>
 				<form:input path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
-
+<small class="invalid-feedback">
+                        The Discription must be 10 to 255 characters
+                </small>
 			</div>
 		</div>
 
