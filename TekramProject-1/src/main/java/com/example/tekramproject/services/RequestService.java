@@ -3,9 +3,16 @@ package com.example.tekramproject.services;
 import java.util.List;
 import java.util.Optional;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Service;
 
+import com.example.tekramproject.models.Quittance;
 import com.example.tekramproject.models.Request;
+import com.example.tekramproject.models.Suggestion;
+import com.example.tekramproject.models.Tax;
+import com.example.tekramproject.models.Water;
+
 import com.example.tekramproject.repositories.QuittanceRepository;
 import com.example.tekramproject.repositories.RequestRepository;
 import com.example.tekramproject.repositories.RoleRepository;
@@ -24,9 +31,9 @@ public class RequestService {
 	private TaxRepository taxRepository;
 	private WaterRepository waterRepository;
 
-	public RequestService(UserRepository userRepository, QuittanceRepository quittanceRepository, RequestRepository requestRepository,
-			RoleRepository roleRepository, SuggestionRepository suggestionRepository, TaxRepository taxRepository,
-			WaterRepository waterRepository) {
+	public RequestService(UserRepository userRepository, QuittanceRepository quittanceRepository,
+			RequestRepository requestRepository, RoleRepository roleRepository,
+			SuggestionRepository suggestionRepository, TaxRepository taxRepository, WaterRepository waterRepository) {
 
 		this.userRepository = userRepository;
 		this.quittanceRepository = quittanceRepository;
@@ -37,10 +44,12 @@ public class RequestService {
 		this.waterRepository = waterRepository;
 	}
 
+
 	//Create a request
-	public void create(Request request) {
-		requestRepository.save(request);
+	public Request create(Request request) {
+		return requestRepository.save(request);
 	}
+
 	// find the request by ID
 	public Request findById(Long id) {
 		Optional<Request> optionalrequest = requestRepository.findById(id);
@@ -51,13 +60,60 @@ public class RequestService {
 		}
 	}
 
-	//find all requests
+
 	public List<Request> all() {
 		return (List<Request>) requestRepository.findAll();
 	}
-	//delete request
+
+	// delete request
 	public void distroy(Request request) {
 		requestRepository.deleteById(request.getId());
 	}
+
+	public Suggestion createSug(@Valid Suggestion sug) {
+		return suggestionRepository.save(sug);
+	}
+
+	public Suggestion updateSuggestion(Suggestion su, Request re) {
+		su.setRequest(re);
+		return suggestionRepository.save(su);
+	}
+
+	
+
+	public Water createWater(Water myWater) {
+		return waterRepository.save(myWater);
+	}
+	public Water updateWater(Water wa,Request re) {
+		wa.setRequest(re);
+		return waterRepository.save(wa);
+
+}
+
+
+	public Quittance createQui(Quittance myQuittance) {
+		return quittanceRepository.save(myQuittance);
+	}
+
+
+	public Quittance updateQuittance(Quittance qu, Request re) {
+		qu.setRequest(re);
+		return quittanceRepository.save(qu);
+		
+	}
+
+
+	public Tax createTax(@Valid Tax myTax) {
+		return taxRepository.save(myTax);
+	}
+
+
+	public Tax updateTax(Tax tax, Request re) {
+		tax.setRequest(re);
+		return taxRepository.save(tax);
+		
+	}
+
+
 
 }

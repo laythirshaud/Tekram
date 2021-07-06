@@ -1,8 +1,11 @@
 package com.example.tekramproject.services;
 
+import java.util.Optional;
+
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.example.tekramproject.models.Request;
 import com.example.tekramproject.models.User;
 import com.example.tekramproject.repositories.RoleRepository;
 import com.example.tekramproject.repositories.UserRepository;
@@ -33,5 +36,15 @@ public class UserService {
     
     public User findByUsername(String username) {
         return userRepository.findByUsername(username);
+    }
+
+    
+    public User findById(Long id) {
+        Optional<User> optionaluser = userRepository.findById(id);
+        if (optionaluser.isPresent()) {
+            return optionaluser.get();
+        } else {
+            return null;
+        }
     }
 }

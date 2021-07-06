@@ -26,6 +26,7 @@ public class Water {
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "request_id")
 	private Request request;
@@ -87,5 +88,12 @@ public class Water {
 	protected void onUpdate() {
 		this.setUpdatedAt(new Date());
 	}
+
+
+	public Water( String buildinglicense) {
+
+		this.buildinglicense = buildinglicense;
+	}
+	
 
 }

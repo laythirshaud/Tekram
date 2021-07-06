@@ -68,7 +68,7 @@
     <div class="jumbotron">
     <h1 class="display-4">
         Welcome to admin Page
-        <c:out value="${currentUser.firstname}"></c:out>
+        <c:out value="MR. ${currentUser.firstname}"></c:out>
     </h1>
   <p class="lead">Here you can control on all the requestes</p>
   <hr class="my-4">

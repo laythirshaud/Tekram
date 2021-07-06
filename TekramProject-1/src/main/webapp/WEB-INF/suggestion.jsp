@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
+	<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,21 +9,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="" style="width: 500px; margin: auto;">
+	<form:form action="/suggestion/new" method="POST"  modelAttribute="suggestion" style="width: 500px; margin: auto;">
 		<div class="row">
 
 
 			<div class="col">
 				<div class="form-group">
-					<label for="">First Name</label> <label type="text"
-						class="form-control is-valid"> Ahmad</label>
+					<label >First Name</label> <label  type="text"
+						class="form-control is-valid">${currentUser.firstname}</label>
 
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for="">National ID</label> <label type="text"
-						class="form-control is-valid"> 8531324582</label>
+					<label >National ID</label> <label  type="text"
+						class="form-control is-valid"> ${currentUser.username}</label>
 
 				</div>
 			</div>
@@ -34,15 +35,15 @@
 
 			<div class="col">
 				<div class="form-group">
-					<label for="">Middle Name</label> <label type="text"
-						class="form-control is-valid"> Moayyad</label>
+					<label>Middle Name</label> <label type="text"
+						class="form-control is-valid"> ${currentUser.middlename}</label>
 
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for="">Address</label> <label type="text"
-						class="form-control is-valid"> Ramallah</label>
+					<label>Address</label> <label type="text"
+						class="form-control is-valid"> ${currentUser.address}</label>
 
 				</div>
 			</div>
@@ -54,15 +55,16 @@
 
 			<div class="col">
 				<div class="form-group">
-					<label for="">Last Name</label> <label type="text"
-						class="form-control is-valid"> Albzoor</label>
+					<label path="">Last Name</label> <label type="text"
+						class="form-control is-valid"> ${currentUser.lastname}</label>
 
 				</div>
 			</div>
 			<div class="col">
 				<div class="form-group">
-					<label for="">Title</label> <input type="text"
-						class="form-control is-invalid" placeholder="Enter the title">
+					<form:label path="title">Title</form:label> 
+					<form:input path="title"  type="text"
+						class="form-control is-invalid" placeholder="Enter the title"/>
 
 
 				</div>
@@ -73,16 +75,15 @@
 
 		<div style="width: 500px;">
 			<div class="form-group">
-				<label for="">Discription</label>
-				<textarea type="text" class="form-control is-invalid" rows="3"
-					cols="8" placeholder="Enter your sugistion or complaint"> </textarea>
+				<form:label path="description">Discription</form:label>
+				<form:input path="description" type="text" rows="3" cols="8" class="form-control is-invalid" placeholder="Enter your sugistion or complaint"/>
 
 			</div>
 		</div>
 
 
-		<button type="button" class="btn btn-primary btn-lg">Send</button>
+		<input type="submit" class="btn btn-primary btn-lg" value="Send">
 
-	</form>
+	</form:form>
 </body>
 </html>
